@@ -18,22 +18,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="225" id="lu3-2l-DaZ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AFVAvatarViewCell" rowHeight="225" id="lu3-2l-DaZ" customClass="AFVAvatarViewCell" customModule="AppForVitsolutions" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="225"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lu3-2l-DaZ" id="GPt-ku-GpI">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="leh-DI-pcC">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_unisex" translatesAutoresizingMaskIntoConstraints="NO" id="leh-DI-pcC">
                                             <rect key="frame" x="123" y="48" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="avatarImageView" destination="leh-DI-pcC" id="ymz-tG-fKc"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="s66-hF-fBJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AFVInputFieldCell" rowHeight="44" id="s66-hF-fBJ" customClass="AFVInputFieldCell" customModule="AppForVitsolutions" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="253" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s66-hF-fBJ" id="i0t-AG-ccg">
@@ -65,8 +68,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="inputTextField" destination="0nw-6S-P1B" id="Mb2-DA-IvD"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="mbr-95-otM">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AFVSendCredentialsCell" rowHeight="80" id="mbr-95-otM" customClass="AFVSendCredentialsCell" customModule="AppForVitsolutions" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="297" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mbr-95-otM" id="9EO-sR-gxN">
@@ -79,6 +85,9 @@
                                             <state key="normal" title="SEND CREDENTIALS">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="onPressedSendCredentialsButton:" destination="mbr-95-otM" eventType="touchUpInside" id="Wcz-XC-GVO"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -89,6 +98,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="credentialsButton" destination="cy5-uB-Awp" id="cDG-vd-QFK"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -117,7 +129,7 @@
         <scene sceneID="e26-fv-8Or">
             <objects>
                 <navigationController id="Y48-Zf-6vp" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="VQz-2l-i6R">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="VQz-2l-i6R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -132,4 +144,7 @@
             <point key="canvasLocation" x="-370" y="77"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_unisex" width="32" height="32"/>
+    </resources>
 </document>
