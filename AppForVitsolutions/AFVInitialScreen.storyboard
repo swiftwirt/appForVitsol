@@ -36,7 +36,7 @@
                         <sections>
                             <tableViewSection id="T67-qK-ExY">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AFVAvatarViewCell" rowHeight="225" id="lu3-2l-DaZ" customClass="AFVAvatarViewCell" customModule="AppForVitsolutions" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="225" id="lu3-2l-DaZ" userLabel="Container View Cell">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lu3-2l-DaZ" id="GPt-ku-GpI">
@@ -45,7 +45,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AFVInputFieldCell" rowHeight="44" id="s66-hF-fBJ" customClass="AFVInputFieldCell" customModule="AppForVitsolutions" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="44" id="s66-hF-fBJ" userLabel="Email Cell">
                                         <rect key="frame" x="0.0" y="225" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s66-hF-fBJ" id="i0t-AG-ccg">
@@ -64,6 +64,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="mmr-La-2an" id="a6s-c7-Xba"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -78,7 +81,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AFVInputFieldCell" rowHeight="44" id="1Z7-jh-7kk" customClass="AFVInputFieldCell" customModule="AppForVitsolutions" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="44" id="1Z7-jh-7kk" userLabel="Password Cell">
                                         <rect key="frame" x="0.0" y="269" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Z7-jh-7kk" id="lSc-NT-7Ie">
@@ -97,6 +100,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="mmr-La-2an" id="KUW-6B-XW6"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -111,7 +117,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AFVSendCredentialsCell" rowHeight="80" id="mbr-95-otM" customClass="AFVSendCredentialsCell" customModule="AppForVitsolutions" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="80" id="mbr-95-otM" userLabel="Login Cell">
                                         <rect key="frame" x="0.0" y="313" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mbr-95-otM" id="9EO-sR-gxN">
@@ -125,6 +131,9 @@
                                                     <state key="normal" title="Login">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="onPressedLogInButton" destination="mmr-La-2an" eventType="touchUpInside" id="9KD-RJ-k2r"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -136,7 +145,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AFVSendCredentialsCell" rowHeight="80" id="XMI-26-mh8" customClass="AFVSendCredentialsCell" customModule="AppForVitsolutions" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="80" id="XMI-26-mh8" userLabel="Sign Up Cell">
                                         <rect key="frame" x="0.0" y="393" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XMI-26-mh8" id="gU9-ZP-yq8">
@@ -174,7 +183,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="2u5-aI-aRX"/>
                     <connections>
-                        <segue destination="0Pz-sf-e3w" kind="show" id="hnr-C1-tsD"/>
+                        <outlet property="emailTextField" destination="0nw-6S-P1B" id="C2e-J0-S8L"/>
+                        <outlet property="passwordTextField" destination="EBh-tG-KpW" id="CMd-1M-Y5a"/>
+                        <segue destination="0Pz-sf-e3w" kind="show" identifier="AFVSegueToMainScreen" id="hnr-C1-tsD"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CH-Vg-tL0" userLabel="First Responder" sceneMemberID="firstResponder"/>

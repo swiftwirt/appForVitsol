@@ -51,19 +51,34 @@ class AFVRestApiService {
         
         let url = EndPoint.baseUrl.rawValue + EndPoint.create.rawValue
         
-        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON { (response: DataResponse<Any>) in
+        Alamofire.upload(multipartFormData: { (multipartFormData) in
             
-            switch(response.result) {
-            case .success(let value):
-                if let dictionary = value as? [String: Any],
-                    let token = dictionary["token"] as? String {
-                    self.saveToken(token: token)
+            for param in parameters {
+                if let value = param.value as? String {
+                    multipartFormData.append(value.data(using: .utf8)!, withName: param.key)
                 }
-                completionHandler(APIResult.success(value))
-            case .failure(let error):
-                completionHandler(APIResult.failure(error))
             }
-        }
+            
+            if let mediaData = UIImagePNGRepresentation(avatar) {
+                multipartFormData.append(mediaData, withName: "avatar", fileName: "1", mimeType: "image/png")
+            }
+            
+        }, to: url, method: .post , headers: nil, encodingCompletion: { (result) in
+            switch result {
+            case .success(let upload, _, _):
+                
+                upload.uploadProgress(closure: { (progress) in
+                    print(progress.fractionCompleted * 100)
+                })
+                
+                upload.responseJSON(completionHandler: { (response) in
+                    completionHandler(APIResult.success(response))
+                })
+            case .failure(let error):
+                print(error)
+                
+            }
+        })
     }
     
     func loginUserWith(_ email: String, password: String, completionHandler: @escaping (APIResult<Any>) -> Void)
