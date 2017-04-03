@@ -107,7 +107,6 @@ class AFVRestApiService {
 
     func getAll(_ completionHandler: @escaping (APIResult<Any>) -> Void)
     {
-        
         let headers: HTTPHeaders = [
             "Authorization": "Bearer " + keychainService.getToken(),
             "Accept": "application/json"
@@ -127,8 +126,7 @@ class AFVRestApiService {
     }
     
     func getGIF(_ completionHandler: @escaping (APIResult<Any>) -> Void)
-    {
-        
+    {        
         let headers: HTTPHeaders = [
             "Authorization": "Bearer " + keychainService.getToken(),
             "Accept": "application/json"
@@ -153,8 +151,8 @@ class AFVRestApiService {
             JSONKey.image.rawValue: image,
             JSONKey.description.rawValue: description ?? "",
             JSONKey.hashtag.rawValue: hashtag ?? "",
-            JSONKey.latitude.rawValue: latitude,
-            JSONKey.longitude.rawValue: longitude,
+            JSONKey.latitude.rawValue: String(latitude),
+            JSONKey.longitude.rawValue: String(longitude),
         ]
         
         let headers: HTTPHeaders = [
