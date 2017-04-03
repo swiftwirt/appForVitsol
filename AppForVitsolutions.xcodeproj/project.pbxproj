@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		D0D8F15D1E9271B700E6D9F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F15C1E9271B700E6D9F4 /* AppDelegate.swift */; };
-		D0D8F15F1E9271B700E6D9F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F15E1E9271B700E6D9F4 /* ViewController.swift */; };
-		D0D8F1621E9271B800E6D9F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F1601E9271B800E6D9F4 /* Main.storyboard */; };
 		D0D8F1641E9271B800E6D9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F1631E9271B800E6D9F4 /* Assets.xcassets */; };
 		D0D8F1671E9271B800E6D9F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F1651E9271B800E6D9F4 /* LaunchScreen.storyboard */; };
+		D0D8F1731E92725800E6D9F4 /* AFVInitialScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F1721E92725800E6D9F4 /* AFVInitialScreen.storyboard */; };
+		D0D8F1771E92742F00E6D9F4 /* AFVInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1761E92742F00E6D9F4 /* AFVInitialViewController.swift */; };
+		D0D8F17B1E92796100E6D9F4 /* AFVMainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F17A1E92796100E6D9F4 /* AFVMainScreen.storyboard */; };
+		D0D8F17D1E92798600E6D9F4 /* AFVMainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F17C1E92798600E6D9F4 /* AFVMainScreenViewController.swift */; };
+		D0D8F1801E92807800E6D9F4 /* AFVUploadNewPictureScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F17F1E92807800E6D9F4 /* AFVUploadNewPictureScreen.storyboard */; };
+		D0D8F1821E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1811E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift */; };
+		D0D8F18A1E92844500E6D9F4 /* AFVImageGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1891E92844500E6D9F4 /* AFVImageGeneratorViewController.swift */; };
+		D0D8F18C1E92845A00E6D9F4 /* AFVImageGenerator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F18B1E92845A00E6D9F4 /* AFVImageGenerator.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D0D8F1591E9271B700E6D9F4 /* AppForVitsolutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppForVitsolutions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D8F15C1E9271B700E6D9F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0D8F15E1E9271B700E6D9F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D0D8F1611E9271B800E6D9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0D8F1631E9271B800E6D9F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0D8F1661E9271B800E6D9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0D8F1681E9271B800E6D9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D8F1721E92725800E6D9F4 /* AFVInitialScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AFVInitialScreen.storyboard; sourceTree = "<group>"; };
+		D0D8F1761E92742F00E6D9F4 /* AFVInitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVInitialViewController.swift; sourceTree = "<group>"; };
+		D0D8F17A1E92796100E6D9F4 /* AFVMainScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AFVMainScreen.storyboard; sourceTree = "<group>"; };
+		D0D8F17C1E92798600E6D9F4 /* AFVMainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVMainScreenViewController.swift; sourceTree = "<group>"; };
+		D0D8F17F1E92807800E6D9F4 /* AFVUploadNewPictureScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AFVUploadNewPictureScreen.storyboard; sourceTree = "<group>"; };
+		D0D8F1811E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVUploadNewPictureViewController.swift; sourceTree = "<group>"; };
+		D0D8F1891E92844500E6D9F4 /* AFVImageGeneratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVImageGeneratorViewController.swift; sourceTree = "<group>"; };
+		D0D8F18B1E92845A00E6D9F4 /* AFVImageGenerator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AFVImageGenerator.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,76 @@
 		D0D8F15B1E9271B700E6D9F4 /* AppForVitsolutions */ = {
 			isa = PBXGroup;
 			children = (
+				D0D8F1701E92720800E6D9F4 /* Presentation */,
+				D0D8F16E1E9271EB00E6D9F4 /* Application Layer */,
+				D0D8F16F1E9271F900E6D9F4 /* Supporting Files */,
+			);
+			path = AppForVitsolutions;
+			sourceTree = "<group>";
+		};
+		D0D8F16E1E9271EB00E6D9F4 /* Application Layer */ = {
+			isa = PBXGroup;
+			children = (
 				D0D8F15C1E9271B700E6D9F4 /* AppDelegate.swift */,
-				D0D8F15E1E9271B700E6D9F4 /* ViewController.swift */,
-				D0D8F1601E9271B800E6D9F4 /* Main.storyboard */,
+			);
+			name = "Application Layer";
+			sourceTree = "<group>";
+		};
+		D0D8F16F1E9271F900E6D9F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				D0D8F1631E9271B800E6D9F4 /* Assets.xcassets */,
 				D0D8F1651E9271B800E6D9F4 /* LaunchScreen.storyboard */,
 				D0D8F1681E9271B800E6D9F4 /* Info.plist */,
 			);
-			path = AppForVitsolutions;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0D8F1701E92720800E6D9F4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8F1841E9281F600E6D9F4 /* GIF Images Generator */,
+				D0D8F17E1E92803C00E6D9F4 /* Upload New Picture Screen */,
+				D0D8F1791E92794300E6D9F4 /* Main Screen */,
+				D0D8F1711E92721100E6D9F4 /* Initial Screen */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		D0D8F1711E92721100E6D9F4 /* Initial Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8F1721E92725800E6D9F4 /* AFVInitialScreen.storyboard */,
+				D0D8F1761E92742F00E6D9F4 /* AFVInitialViewController.swift */,
+			);
+			name = "Initial Screen";
+			sourceTree = "<group>";
+		};
+		D0D8F1791E92794300E6D9F4 /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8F17A1E92796100E6D9F4 /* AFVMainScreen.storyboard */,
+				D0D8F17C1E92798600E6D9F4 /* AFVMainScreenViewController.swift */,
+			);
+			name = "Main Screen";
+			sourceTree = "<group>";
+		};
+		D0D8F17E1E92803C00E6D9F4 /* Upload New Picture Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8F17F1E92807800E6D9F4 /* AFVUploadNewPictureScreen.storyboard */,
+				D0D8F1811E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift */,
+			);
+			name = "Upload New Picture Screen";
+			sourceTree = "<group>";
+		};
+		D0D8F1841E9281F600E6D9F4 /* GIF Images Generator */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8F1891E92844500E6D9F4 /* AFVImageGeneratorViewController.swift */,
+				D0D8F18B1E92845A00E6D9F4 /* AFVImageGenerator.storyboard */,
+			);
+			name = "GIF Images Generator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +197,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D8F18C1E92845A00E6D9F4 /* AFVImageGenerator.storyboard in Resources */,
+				D0D8F1801E92807800E6D9F4 /* AFVUploadNewPictureScreen.storyboard in Resources */,
 				D0D8F1671E9271B800E6D9F4 /* LaunchScreen.storyboard in Resources */,
+				D0D8F17B1E92796100E6D9F4 /* AFVMainScreen.storyboard in Resources */,
 				D0D8F1641E9271B800E6D9F4 /* Assets.xcassets in Resources */,
-				D0D8F1621E9271B800E6D9F4 /* Main.storyboard in Resources */,
+				D0D8F1731E92725800E6D9F4 /* AFVInitialScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +213,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0D8F15F1E9271B700E6D9F4 /* ViewController.swift in Sources */,
+				D0D8F18A1E92844500E6D9F4 /* AFVImageGeneratorViewController.swift in Sources */,
 				D0D8F15D1E9271B700E6D9F4 /* AppDelegate.swift in Sources */,
+				D0D8F1821E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift in Sources */,
+				D0D8F17D1E92798600E6D9F4 /* AFVMainScreenViewController.swift in Sources */,
+				D0D8F1771E92742F00E6D9F4 /* AFVInitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D0D8F1601E9271B800E6D9F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0D8F1611E9271B800E6D9F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D0D8F1651E9271B800E6D9F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
