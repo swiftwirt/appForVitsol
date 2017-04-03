@@ -23,9 +23,8 @@
 		D0D8F1911E9294CF00E6D9F4 /* AFVApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1901E9294CF00E6D9F4 /* AFVApiService.swift */; };
 		D0D8F1931E92951600E6D9F4 /* AFVKeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1921E92951600E6D9F4 /* AFVKeychainService.swift */; };
 		D0D8F1951E92A06400E6D9F4 /* AFVApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1941E92A06400E6D9F4 /* AFVApplicationManager.swift */; };
-		D0D8F1981E92A37F00E6D9F4 /* AFVAvatarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1971E92A37F00E6D9F4 /* AFVAvatarViewCell.swift */; };
-		D0D8F19A1E92A3C000E6D9F4 /* AFVInputFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1991E92A3C000E6D9F4 /* AFVInputFieldCell.swift */; };
-		D0D8F19C1E92A3F800E6D9F4 /* AFVSendCredentialsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F19B1E92A3F800E6D9F4 /* AFVSendCredentialsCell.swift */; };
+		D0D8F1A11E92ADF200E6D9F4 /* AFVSingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1A01E92ADF200E6D9F4 /* AFVSingUpViewController.swift */; };
+		D0D8F1A51E92AE1800E6D9F4 /* AFVSignUpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F1A41E92AE1800E6D9F4 /* AFVSignUpScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +48,8 @@
 		D0D8F1901E9294CF00E6D9F4 /* AFVApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVApiService.swift; sourceTree = "<group>"; };
 		D0D8F1921E92951600E6D9F4 /* AFVKeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVKeychainService.swift; sourceTree = "<group>"; };
 		D0D8F1941E92A06400E6D9F4 /* AFVApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVApplicationManager.swift; sourceTree = "<group>"; };
-		D0D8F1971E92A37F00E6D9F4 /* AFVAvatarViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVAvatarViewCell.swift; sourceTree = "<group>"; };
-		D0D8F1991E92A3C000E6D9F4 /* AFVInputFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVInputFieldCell.swift; sourceTree = "<group>"; };
-		D0D8F19B1E92A3F800E6D9F4 /* AFVSendCredentialsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVSendCredentialsCell.swift; sourceTree = "<group>"; };
+		D0D8F1A01E92ADF200E6D9F4 /* AFVSingUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVSingUpViewController.swift; sourceTree = "<group>"; };
+		D0D8F1A41E92AE1800E6D9F4 /* AFVSignUpScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AFVSignUpScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,10 +132,11 @@
 		D0D8F1701E92720800E6D9F4 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D0D8F1711E92721100E6D9F4 /* Initial Screen */,
+				D0D8F19D1E92ADA000E6D9F4 /* Sign Up Screen */,
 				D0D8F1841E9281F600E6D9F4 /* GIF Images Generator */,
 				D0D8F17E1E92803C00E6D9F4 /* Upload New Picture Screen */,
 				D0D8F1791E92794300E6D9F4 /* Main Screen */,
-				D0D8F1711E92721100E6D9F4 /* Initial Screen */,
 			);
 			name = Presentation;
 			sourceTree = "<group>";
@@ -145,7 +144,6 @@
 		D0D8F1711E92721100E6D9F4 /* Initial Screen */ = {
 			isa = PBXGroup;
 			children = (
-				D0D8F1961E92A34900E6D9F4 /* Initial Screen Cells */,
 				D0D8F1721E92725800E6D9F4 /* AFVInitialScreen.storyboard */,
 				D0D8F1761E92742F00E6D9F4 /* AFVInitialViewController.swift */,
 			);
@@ -189,14 +187,13 @@
 			name = Servises;
 			sourceTree = "<group>";
 		};
-		D0D8F1961E92A34900E6D9F4 /* Initial Screen Cells */ = {
+		D0D8F19D1E92ADA000E6D9F4 /* Sign Up Screen */ = {
 			isa = PBXGroup;
 			children = (
-				D0D8F1971E92A37F00E6D9F4 /* AFVAvatarViewCell.swift */,
-				D0D8F1991E92A3C000E6D9F4 /* AFVInputFieldCell.swift */,
-				D0D8F19B1E92A3F800E6D9F4 /* AFVSendCredentialsCell.swift */,
+				D0D8F1A01E92ADF200E6D9F4 /* AFVSingUpViewController.swift */,
+				D0D8F1A41E92AE1800E6D9F4 /* AFVSignUpScreen.storyboard */,
 			);
-			name = "Initial Screen Cells";
+			name = "Sign Up Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +260,7 @@
 			files = (
 				D0D8F18C1E92845A00E6D9F4 /* AFVImageGenerator.storyboard in Resources */,
 				D0D8F1801E92807800E6D9F4 /* AFVUploadNewPictureScreen.storyboard in Resources */,
+				D0D8F1A51E92AE1800E6D9F4 /* AFVSignUpScreen.storyboard in Resources */,
 				D0D8F1671E9271B800E6D9F4 /* LaunchScreen.storyboard in Resources */,
 				D0D8F17B1E92796100E6D9F4 /* AFVMainScreen.storyboard in Resources */,
 				D0D8F1641E9271B800E6D9F4 /* Assets.xcassets in Resources */,
@@ -329,14 +327,12 @@
 				D0D8F18A1E92844500E6D9F4 /* AFVImageGeneratorViewController.swift in Sources */,
 				D0D8F15D1E9271B700E6D9F4 /* AppDelegate.swift in Sources */,
 				D0D8F1821E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift in Sources */,
-				D0D8F19C1E92A3F800E6D9F4 /* AFVSendCredentialsCell.swift in Sources */,
 				D0D8F1911E9294CF00E6D9F4 /* AFVApiService.swift in Sources */,
 				D0D8F1931E92951600E6D9F4 /* AFVKeychainService.swift in Sources */,
+				D0D8F1A11E92ADF200E6D9F4 /* AFVSingUpViewController.swift in Sources */,
 				D0D8F17D1E92798600E6D9F4 /* AFVMainScreenViewController.swift in Sources */,
-				D0D8F19A1E92A3C000E6D9F4 /* AFVInputFieldCell.swift in Sources */,
 				D0D8F1951E92A06400E6D9F4 /* AFVApplicationManager.swift in Sources */,
 				D0D8F1771E92742F00E6D9F4 /* AFVInitialViewController.swift in Sources */,
-				D0D8F1981E92A37F00E6D9F4 /* AFVAvatarViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

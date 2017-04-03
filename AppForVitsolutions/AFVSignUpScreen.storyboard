@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BJx-Nq-QFO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sing Up View Controller-->
+        <scene sceneID="fIa-T3-9gH">
+            <objects>
+                <tableViewController id="BJx-Nq-QFO" customClass="AFVSingUpViewController" customModule="AppForVitsolutions" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GS1-Bi-LI8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="5xA-EW-nmz">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AFVAvatarViewCell" rowHeight="225" id="x9y-ve-7TU" customClass="AFVAvatarViewCell" customModule="AppForVitsolutions" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x9y-ve-7TU" id="wwa-MJ-WrI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_unisex" translatesAutoresizingMaskIntoConstraints="NO" id="CJQ-16-UAE">
+                                                    <rect key="frame" x="122" y="48" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AFVInputFieldCell" rowHeight="44" id="fZ9-sw-mwe" customClass="AFVInputFieldCell" customModule="AppForVitsolutions" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="225" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fZ9-sw-mwe" id="sKW-z5-Ki5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q24-AL-rNf" userLabel="Line View">
+                                                    <rect key="frame" x="20" y="38" width="335" height="1"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="jAO-98-2vL"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y0c-LG-287" userLabel="Input Text Field">
+                                                    <rect key="frame" x="28" y="6" width="319" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Y0c-LG-287" firstAttribute="top" secondItem="sKW-z5-Ki5" secondAttribute="top" constant="6" id="Aiv-Dy-or8"/>
+                                                <constraint firstItem="Y0c-LG-287" firstAttribute="leading" secondItem="sKW-z5-Ki5" secondAttribute="leading" constant="28" id="Cvx-pe-4rh"/>
+                                                <constraint firstAttribute="bottom" secondItem="Q24-AL-rNf" secondAttribute="bottom" constant="5" id="PFK-Jg-XT2"/>
+                                                <constraint firstAttribute="trailing" secondItem="Q24-AL-rNf" secondAttribute="trailing" constant="20" id="QYg-Dg-e33"/>
+                                                <constraint firstItem="Q24-AL-rNf" firstAttribute="leading" secondItem="sKW-z5-Ki5" secondAttribute="leading" constant="20" id="f8W-ul-OmY"/>
+                                                <constraint firstItem="Q24-AL-rNf" firstAttribute="top" secondItem="Y0c-LG-287" secondAttribute="bottom" constant="2" id="nWE-3Z-Wmm"/>
+                                                <constraint firstAttribute="trailing" secondItem="Y0c-LG-287" secondAttribute="trailing" constant="28" id="sbV-Xz-mYg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AFVInputFieldCell" rowHeight="44" id="NUq-3v-jnb" customClass="AFVInputFieldCell" customModule="AppForVitsolutions" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="269" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NUq-3v-jnb" id="1u8-Uu-HXi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EC8-Fc-IBa" userLabel="Line View">
+                                                    <rect key="frame" x="20" y="38" width="335" height="1"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="7gD-K1-MOT"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wuR-9q-qAg" userLabel="Input Text Field">
+                                                    <rect key="frame" x="28" y="6" width="319" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="EC8-Fc-IBa" firstAttribute="leading" secondItem="1u8-Uu-HXi" secondAttribute="leading" constant="20" id="B2p-wX-ero"/>
+                                                <constraint firstItem="EC8-Fc-IBa" firstAttribute="top" secondItem="wuR-9q-qAg" secondAttribute="bottom" constant="2" id="IW6-j3-cQJ"/>
+                                                <constraint firstItem="wuR-9q-qAg" firstAttribute="leading" secondItem="1u8-Uu-HXi" secondAttribute="leading" constant="28" id="TV2-lE-MGH"/>
+                                                <constraint firstAttribute="bottom" secondItem="EC8-Fc-IBa" secondAttribute="bottom" constant="5" id="ci8-Dn-7kS"/>
+                                                <constraint firstItem="wuR-9q-qAg" firstAttribute="top" secondItem="1u8-Uu-HXi" secondAttribute="top" constant="6" id="r73-gx-iXD"/>
+                                                <constraint firstAttribute="trailing" secondItem="wuR-9q-qAg" secondAttribute="trailing" constant="28" id="xI3-Bm-4uL"/>
+                                                <constraint firstAttribute="trailing" secondItem="EC8-Fc-IBa" secondAttribute="trailing" constant="20" id="xRx-Jy-EiK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AFVInputFieldCell" rowHeight="44" id="eZE-ZZ-pat" customClass="AFVInputFieldCell" customModule="AppForVitsolutions" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="313" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eZE-ZZ-pat" id="MiE-ug-nni">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3iK-xd-BrI" userLabel="Line View">
+                                                    <rect key="frame" x="20" y="38" width="335" height="1"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="0sk-ZZ-gq6"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VoS-2Z-mNx" userLabel="Input Text Field">
+                                                    <rect key="frame" x="28" y="6" width="319" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3iK-xd-BrI" firstAttribute="leading" secondItem="MiE-ug-nni" secondAttribute="leading" constant="20" id="5BX-qG-3Rv"/>
+                                                <constraint firstAttribute="trailing" secondItem="VoS-2Z-mNx" secondAttribute="trailing" constant="28" id="Lfo-6y-p8P"/>
+                                                <constraint firstItem="3iK-xd-BrI" firstAttribute="top" secondItem="VoS-2Z-mNx" secondAttribute="bottom" constant="2" id="bHL-Ti-zDU"/>
+                                                <constraint firstAttribute="trailing" secondItem="3iK-xd-BrI" secondAttribute="trailing" constant="20" id="cAr-Ec-aae"/>
+                                                <constraint firstAttribute="bottom" secondItem="3iK-xd-BrI" secondAttribute="bottom" constant="5" id="jcV-lw-1wz"/>
+                                                <constraint firstItem="VoS-2Z-mNx" firstAttribute="top" secondItem="MiE-ug-nni" secondAttribute="top" constant="6" id="rHg-4q-VdN"/>
+                                                <constraint firstItem="VoS-2Z-mNx" firstAttribute="leading" secondItem="MiE-ug-nni" secondAttribute="leading" constant="28" id="tCg-Jw-NFg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AFVSendCredentialsCell" rowHeight="80" id="IF9-q4-ZW2" customClass="AFVSendCredentialsCell" customModule="AppForVitsolutions" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="357" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IF9-q4-ZW2" id="aea-35-cG2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNU-rn-q6m">
+                                                    <rect key="frame" x="29" y="17" width="316" height="47"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <state key="normal" title="Sign Up">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GNU-rn-q6m" firstAttribute="top" secondItem="aea-35-cG2" secondAttribute="top" constant="17" id="5ge-pE-gQN"/>
+                                                <constraint firstAttribute="bottom" secondItem="GNU-rn-q6m" secondAttribute="bottom" constant="16" id="Evv-qb-fSl"/>
+                                                <constraint firstAttribute="trailing" secondItem="GNU-rn-q6m" secondAttribute="trailing" constant="30" id="LSZ-Fs-VF6"/>
+                                                <constraint firstItem="GNU-rn-q6m" firstAttribute="leading" secondItem="aea-35-cG2" secondAttribute="leading" constant="29" id="XY2-8P-YKa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="BJx-Nq-QFO" id="qGB-Uu-gfx"/>
+                            <outlet property="delegate" destination="BJx-Nq-QFO" id="va8-wb-cSp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="bZN-GA-E5L"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jm-hI-jgw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-548" y="58"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_unisex" width="32" height="32"/>
+    </resources>
+</document>
