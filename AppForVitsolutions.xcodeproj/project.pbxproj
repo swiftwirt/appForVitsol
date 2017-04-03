@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53974DC80A0B37DEF79FC5BA /* Pods_AppForVitsolutions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745C68C82A6DB29F6E6B049D /* Pods_AppForVitsolutions.framework */; };
 		D0D8F15D1E9271B700E6D9F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F15C1E9271B700E6D9F4 /* AppDelegate.swift */; };
 		D0D8F1641E9271B800E6D9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F1631E9271B800E6D9F4 /* Assets.xcassets */; };
 		D0D8F1671E9271B800E6D9F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F1651E9271B800E6D9F4 /* LaunchScreen.storyboard */; };
@@ -18,9 +19,16 @@
 		D0D8F1821E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1811E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift */; };
 		D0D8F18A1E92844500E6D9F4 /* AFVImageGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1891E92844500E6D9F4 /* AFVImageGeneratorViewController.swift */; };
 		D0D8F18C1E92845A00E6D9F4 /* AFVImageGenerator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F18B1E92845A00E6D9F4 /* AFVImageGenerator.storyboard */; };
+		D0D8F18F1E92945D00E6D9F4 /* AFVRestApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F18E1E92945D00E6D9F4 /* AFVRestApiService.swift */; };
+		D0D8F1911E9294CF00E6D9F4 /* AFVApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1901E9294CF00E6D9F4 /* AFVApiService.swift */; };
+		D0D8F1931E92951600E6D9F4 /* AFVKeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1921E92951600E6D9F4 /* AFVKeychainService.swift */; };
+		D0D8F1951E92A06400E6D9F4 /* AFVApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1941E92A06400E6D9F4 /* AFVApplicationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		745C68C82A6DB29F6E6B049D /* Pods_AppForVitsolutions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppForVitsolutions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DA55D9236A2E1A28A6427F /* Pods-AppForVitsolutions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppForVitsolutions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppForVitsolutions/Pods-AppForVitsolutions.debug.xcconfig"; sourceTree = "<group>"; };
+		A02F119C1C936C88D2C371F7 /* Pods-AppForVitsolutions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppForVitsolutions.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppForVitsolutions/Pods-AppForVitsolutions.release.xcconfig"; sourceTree = "<group>"; };
 		D0D8F1591E9271B700E6D9F4 /* AppForVitsolutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppForVitsolutions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D8F15C1E9271B700E6D9F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D8F1631E9271B800E6D9F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +42,10 @@
 		D0D8F1811E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVUploadNewPictureViewController.swift; sourceTree = "<group>"; };
 		D0D8F1891E92844500E6D9F4 /* AFVImageGeneratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVImageGeneratorViewController.swift; sourceTree = "<group>"; };
 		D0D8F18B1E92845A00E6D9F4 /* AFVImageGenerator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AFVImageGenerator.storyboard; sourceTree = "<group>"; };
+		D0D8F18E1E92945D00E6D9F4 /* AFVRestApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVRestApiService.swift; sourceTree = "<group>"; };
+		D0D8F1901E9294CF00E6D9F4 /* AFVApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVApiService.swift; sourceTree = "<group>"; };
+		D0D8F1921E92951600E6D9F4 /* AFVKeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVKeychainService.swift; sourceTree = "<group>"; };
+		D0D8F1941E92A06400E6D9F4 /* AFVApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVApplicationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53974DC80A0B37DEF79FC5BA /* Pods_AppForVitsolutions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EB2867BEAD3C19140CAF0A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				745C68C82A6DB29F6E6B049D /* Pods_AppForVitsolutions.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		453F6CDD592FE4B1C723F860 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84DA55D9236A2E1A28A6427F /* Pods-AppForVitsolutions.debug.xcconfig */,
+				A02F119C1C936C88D2C371F7 /* Pods-AppForVitsolutions.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D0D8F1501E9271B700E6D9F4 = {
 			isa = PBXGroup;
 			children = (
 				D0D8F15B1E9271B700E6D9F4 /* AppForVitsolutions */,
 				D0D8F15A1E9271B700E6D9F4 /* Products */,
+				453F6CDD592FE4B1C723F860 /* Pods */,
+				0EB2867BEAD3C19140CAF0A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +98,7 @@
 		D0D8F15B1E9271B700E6D9F4 /* AppForVitsolutions */ = {
 			isa = PBXGroup;
 			children = (
+				D0D8F18D1E92942400E6D9F4 /* Servises */,
 				D0D8F1701E92720800E6D9F4 /* Presentation */,
 				D0D8F16E1E9271EB00E6D9F4 /* Application Layer */,
 				D0D8F16F1E9271F900E6D9F4 /* Supporting Files */,
@@ -77,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D0D8F15C1E9271B700E6D9F4 /* AppDelegate.swift */,
+				D0D8F1941E92A06400E6D9F4 /* AFVApplicationManager.swift */,
 			);
 			name = "Application Layer";
 			sourceTree = "<group>";
@@ -138,6 +172,16 @@
 			name = "GIF Images Generator";
 			sourceTree = "<group>";
 		};
+		D0D8F18D1E92942400E6D9F4 /* Servises */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8F1901E9294CF00E6D9F4 /* AFVApiService.swift */,
+				D0D8F18E1E92945D00E6D9F4 /* AFVRestApiService.swift */,
+				D0D8F1921E92951600E6D9F4 /* AFVKeychainService.swift */,
+			);
+			name = Servises;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0D8F16B1E9271B800E6D9F4 /* Build configuration list for PBXNativeTarget "AppForVitsolutions" */;
 			buildPhases = (
+				42BCA76690289AE171A024E6 /* [CP] Check Pods Manifest.lock */,
 				D0D8F1551E9271B700E6D9F4 /* Sources */,
 				D0D8F1561E9271B700E6D9F4 /* Frameworks */,
 				D0D8F1571E9271B700E6D9F4 /* Resources */,
+				8B7C5ED91F6B8B4CDB63DE54 /* [CP] Embed Pods Frameworks */,
+				34EE37D7B73B2C8070EC827A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,15 +255,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34EE37D7B73B2C8070EC827A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppForVitsolutions/Pods-AppForVitsolutions-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42BCA76690289AE171A024E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B7C5ED91F6B8B4CDB63DE54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppForVitsolutions/Pods-AppForVitsolutions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0D8F1551E9271B700E6D9F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D8F18F1E92945D00E6D9F4 /* AFVRestApiService.swift in Sources */,
 				D0D8F18A1E92844500E6D9F4 /* AFVImageGeneratorViewController.swift in Sources */,
 				D0D8F15D1E9271B700E6D9F4 /* AppDelegate.swift in Sources */,
 				D0D8F1821E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift in Sources */,
+				D0D8F1911E9294CF00E6D9F4 /* AFVApiService.swift in Sources */,
+				D0D8F1931E92951600E6D9F4 /* AFVKeychainService.swift in Sources */,
 				D0D8F17D1E92798600E6D9F4 /* AFVMainScreenViewController.swift in Sources */,
+				D0D8F1951E92A06400E6D9F4 /* AFVApplicationManager.swift in Sources */,
 				D0D8F1771E92742F00E6D9F4 /* AFVInitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +427,7 @@
 		};
 		D0D8F16C1E9271B800E6D9F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84DA55D9236A2E1A28A6427F /* Pods-AppForVitsolutions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppForVitsolutions/Info.plist;
@@ -340,6 +440,7 @@
 		};
 		D0D8F16D1E9271B800E6D9F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A02F119C1C936C88D2C371F7 /* Pods-AppForVitsolutions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppForVitsolutions/Info.plist;
@@ -369,6 +470,7 @@
 				D0D8F16D1E9271B800E6D9F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
