@@ -9,7 +9,7 @@
 import UIKit
 import PKHUD
 
-class AFVSingUpViewController: UITableViewController {
+class AFVSingUpViewController: AFVImagePickerViewController {
     
     enum SegueIdentifier: String {
         case mainScreen = "AFVSegueToMainScreen"
@@ -20,12 +20,7 @@ class AFVSingUpViewController: UITableViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var avatarImageView: UIImageView!
     
-    let applicationManager = AFVApplicationManager.instance()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+    private let applicationManager = AFVApplicationManager.instance()
     
     // MARK: - Main methods
     
@@ -52,10 +47,28 @@ class AFVSingUpViewController: UITableViewController {
         }
     }
     
+    // MARK: - UIImagePickerControllerDelegate
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+    {
+        dismiss(animated: true, completion: { () -> Void in
+            if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+                self.avatarImageView.image = image
+            } else {
+                self.avatarImageView.image = #imageLiteral(resourceName: "icon_unisex")
+            }
+        })
+    }
+    
     // MARK: - Actions
     
     @IBAction func onPressedSignUpButton()
     {
         signUp()
+    }
+    
+    @IBAction func onTappedAddAvatarButton(_ sender: Any)
+    {
+        showActionSheet()
     }
 }

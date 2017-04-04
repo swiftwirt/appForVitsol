@@ -9,7 +9,7 @@
 import UIKit
 import PKHUD
 
-class AFVUploadNewPictureViewController: UITableViewController {
+class AFVUploadNewPictureViewController: AFVImagePickerViewController {
     
     // TODO: Add location manager here
     let latitude: Float = 49.993500
@@ -20,17 +20,12 @@ class AFVUploadNewPictureViewController: UITableViewController {
     @IBOutlet weak var hashtagTextField: UITextField!
     
     let applicationManager = AFVApplicationManager.instance()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
     
     // MARK: - Main methods
     
     private func addImage()
     {
-        guard let picture = UIImage(named: "fun") else { return }
+        guard let picture = uploadPictureImageView.image else { return }
         HUD.show(.progress)
         applicationManager.apiService.uploadNew(picture, description: descriptionTextField.description, hashtag: hashtagTextField.text, latitude: latitude, longitude: longitude) { (result) in
             switch(result) {
@@ -43,11 +38,29 @@ class AFVUploadNewPictureViewController: UITableViewController {
             }
         }
     }
+    
+    // MARK: - UIImagePickerControllerDelegate
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+    {
+        dismiss(animated: true, completion: { () -> Void in
+            if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+                self.uploadPictureImageView.image = image
+            } else {
+                self.uploadPictureImageView.image = #imageLiteral(resourceName: "icon_add_image")
+            }
+        })
+    }
 
     // MARK: - Actions
+    @IBAction func onTappedPickUpImage(_ sender: Any)
+    {
+        showActionSheet()
+    }
     
     @IBAction func onPressedDoneButton(_ sender: Any)
     {
-        addImage()
+        addImage()        
     }
 }
+

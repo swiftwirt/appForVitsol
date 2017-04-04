@@ -27,6 +27,7 @@
 		D0D8F1A51E92AE1800E6D9F4 /* AFVSignUpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F1A41E92AE1800E6D9F4 /* AFVSignUpScreen.storyboard */; };
 		D0D8F1AD1E9358EB00E6D9F4 /* AFVWeatherViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1AC1E9358EA00E6D9F4 /* AFVWeatherViewCell.swift */; };
 		D0D8F1B01E935A4000E6D9F4 /* AFVWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1AF1E935A4000E6D9F4 /* AFVWeather.swift */; };
+		D0D8F1B31E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1B21E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		D0D8F1A41E92AE1800E6D9F4 /* AFVSignUpScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AFVSignUpScreen.storyboard; sourceTree = "<group>"; };
 		D0D8F1AC1E9358EA00E6D9F4 /* AFVWeatherViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVWeatherViewCell.swift; sourceTree = "<group>"; };
 		D0D8F1AF1E935A4000E6D9F4 /* AFVWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVWeather.swift; sourceTree = "<group>"; };
+		D0D8F1B21E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVImagePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		D0D8F15B1E9271B700E6D9F4 /* AppForVitsolutions */ = {
 			isa = PBXGroup;
 			children = (
+				D0D8F1B11E93C42700E6D9F4 /* Helpers */,
 				D0D8F1AE1E935A1700E6D9F4 /* Models */,
 				D0D8F18D1E92942400E6D9F4 /* Servises */,
 				D0D8F1701E92720800E6D9F4 /* Presentation */,
@@ -208,6 +211,14 @@
 				D0D8F1AF1E935A4000E6D9F4 /* AFVWeather.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		D0D8F1B11E93C42700E6D9F4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8F1B21E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +352,7 @@
 				D0D8F18A1E92844500E6D9F4 /* AFVImageGeneratorViewController.swift in Sources */,
 				D0D8F15D1E9271B700E6D9F4 /* AppDelegate.swift in Sources */,
 				D0D8F1821E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift in Sources */,
+				D0D8F1B31E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift in Sources */,
 				D0D8F1B01E935A4000E6D9F4 /* AFVWeather.swift in Sources */,
 				D0D8F1911E9294CF00E6D9F4 /* AFVApiService.swift in Sources */,
 				D0D8F1931E92951600E6D9F4 /* AFVKeychainService.swift in Sources */,

@@ -31,7 +31,19 @@
                                                     <rect key="frame" x="122" y="48" width="128" height="128"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2y-Gu-d4d" userLabel="Add Avatar">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                    <connections>
+                                                        <action selector="onTappedAddAvatarButton:" destination="BJx-Nq-QFO" eventType="touchUpInside" id="Qhj-z0-8Up"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="z2y-Gu-d4d" firstAttribute="leading" secondItem="wwa-MJ-WrI" secondAttribute="leading" id="0xb-fP-mtb"/>
+                                                <constraint firstAttribute="trailing" secondItem="z2y-Gu-d4d" secondAttribute="trailing" id="DmK-S4-n9U"/>
+                                                <constraint firstItem="z2y-Gu-d4d" firstAttribute="top" secondItem="wwa-MJ-WrI" secondAttribute="top" id="ahi-dA-NRp"/>
+                                                <constraint firstAttribute="bottom" secondItem="z2y-Gu-d4d" secondAttribute="bottom" id="nhp-IJ-NaK"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>

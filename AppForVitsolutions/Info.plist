@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app would like to use your Photo Library</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app would like to use your Camera</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app lets you keep track of uploaded pictures. It needs access to the GPS coordinates for your location.</string>
 	<key>NSAppTransportSecurity</key>
