@@ -10,26 +10,26 @@ import UIKit
 
 class AFVImageGeneratorViewController: UIViewController {
 
+    @IBOutlet weak var generatedGIFImageView: UIImageView!
+    
+    private let applicationManager = AFVApplicationManager.instance()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func getgeneratedGIF()
+    {
+        applicationManager.apiService.getGIF { (result) in
+            switch result {
+            case .success(let value):
+                print("Do smth with gif link \(value)")
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
-    */
 
 }

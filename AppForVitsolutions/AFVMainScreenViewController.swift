@@ -32,6 +32,11 @@ class AFVMainScreenViewController: UICollectionViewController {
         getAllWeatherEntities()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        data.removeAll()
+    }
+    
     private func getAllWeatherEntities()
     {
         HUD.show(.progress)

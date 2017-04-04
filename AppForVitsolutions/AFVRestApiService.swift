@@ -71,9 +71,18 @@ class AFVRestApiService {
                     print(progress.fractionCompleted * 100)
                 })
                 
-                upload.responseJSON(completionHandler: { (response) in
-                    completionHandler(APIResult.success(response))
-                })
+                upload.responseJSON(completionHandler: { (response: DataResponse<Any>) in
+                    switch(response.result) {
+                    case .success(let value):
+                        if let dictionary = value as? [String: Any],
+                            let token = dictionary["token"] as? String {
+                            self.saveToken(token: token)
+                        }
+                        completionHandler(APIResult.success(value))
+                    case .failure(let error):
+                        completionHandler(APIResult.failure(error))
+                    }
+                  })
             case .failure(let error):
                 print(error)
                 
