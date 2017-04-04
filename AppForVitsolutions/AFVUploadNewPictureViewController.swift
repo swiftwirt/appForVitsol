@@ -11,9 +11,9 @@ import PKHUD
 
 class AFVUploadNewPictureViewController: UITableViewController {
     
-    // MARK: - Constants
-    let latitude: Float = 51.4826
-    let longitude: Float = 0.0077
+    // TODO: Add location manager here
+    let latitude: Float = 49.993500
+    let longitude: Float = 36.230383
     
     @IBOutlet weak var uploadPictureImageView: UIImageView!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -30,7 +30,7 @@ class AFVUploadNewPictureViewController: UITableViewController {
     
     private func addImage()
     {
-        guard let picture = uploadPictureImageView.image else { return }
+        guard let picture = UIImage(named: "fun") else { return }
         HUD.show(.progress)
         applicationManager.apiService.uploadNew(picture, description: descriptionTextField.description, hashtag: hashtagTextField.text, latitude: latitude, longitude: longitude) { (result) in
             switch(result) {

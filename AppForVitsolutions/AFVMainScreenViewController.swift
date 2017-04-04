@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class AFVMainScreenViewController: UICollectionViewController {
     
@@ -14,38 +15,52 @@ class AFVMainScreenViewController: UICollectionViewController {
         case imageGenerator = "AFVSegueToImageGenerator"
     }
     
-    private let reuseIdentifier = "Cell"
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
+    enum ReuseIdentifier: String {
+        case weatherCell = "AFVWeatherCell"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    let applicationManager = AFVApplicationManager.instance()
+    
+    var data = [AFVWeather]() {
+        didSet {
+            collectionView?.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getAllWeatherEntities()
+    }
+    
+    private func getAllWeatherEntities()
+    {
+        HUD.show(.progress)
+        applicationManager.apiService.getAll { (result) in
+            switch result {
+            case .success(let value):
+                HUD.flash(.success)
+                guard let dictionary = value as? [String: Any], let array = dictionary["images"] as? [[String: Any]] else { return }
+                self.data.removeAll()
+                for dictionary in array {
+                    let weatherEntity = AFVWeather(with: dictionary)
+                    self.data.append(weatherEntity)
+                }
+            case .failure(let error):
+                HUD.flash(.error)
+                print(error)
+            }
+        }
     }
 
     // MARK: UICollectionViewDataSource
-
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return data.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReuseIdentifier.weatherCell.rawValue, for: indexPath) as! AFVWeatherViewCell
+        cell.weather = data[indexPath.row]
         return cell
     }
 

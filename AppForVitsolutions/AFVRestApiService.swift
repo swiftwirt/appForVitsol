@@ -12,7 +12,7 @@ import Alamofire
 class AFVRestApiService {
     
     enum EndPoint: String {
-        case baseUrl = "http://api.doitserver.in.ua/api/"
+        case baseUrl = "http://api.doitserver.in.ua/"
         case create = "create"
         case login = "login"
         case getAll = "all"
@@ -108,7 +108,7 @@ class AFVRestApiService {
     func getAll(_ completionHandler: @escaping (APIResult<Any>) -> Void)
     {
         let headers: HTTPHeaders = [
-            "Authorization": "Bearer " + keychainService.getToken(),
+            "token": keychainService.getToken(),
             "Accept": "application/json"
         ]
         
@@ -128,7 +128,7 @@ class AFVRestApiService {
     func getGIF(_ completionHandler: @escaping (APIResult<Any>) -> Void)
     {        
         let headers: HTTPHeaders = [
-            "Authorization": "Bearer " + keychainService.getToken(),
+            "token": keychainService.getToken(),
             "Accept": "application/json"
         ]
         
@@ -156,7 +156,7 @@ class AFVRestApiService {
         ]
         
         let headers: HTTPHeaders = [
-            "Authorization": "Bearer " + keychainService.getToken(),
+            "token": keychainService.getToken(),
             "Accept": "application/json"
         ]
         
