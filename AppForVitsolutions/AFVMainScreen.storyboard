@@ -99,7 +99,7 @@
                             <barButtonItem systemItem="play" id="zyh-7j-kC6">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="oV9-Yp-ULb" kind="presentation" identifier="AFVSegueToImageGenerator" modalPresentationStyle="formSheet" id="PAf-1n-gX4"/>
+                                    <segue destination="oV9-Yp-ULb" kind="show" identifier="AFVSegueToImageGenerator" id="PAf-1n-gX4"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>

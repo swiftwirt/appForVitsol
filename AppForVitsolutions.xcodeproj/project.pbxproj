@@ -28,6 +28,7 @@
 		D0D8F1AD1E9358EB00E6D9F4 /* AFVWeatherViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1AC1E9358EA00E6D9F4 /* AFVWeatherViewCell.swift */; };
 		D0D8F1B01E935A4000E6D9F4 /* AFVWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1AF1E935A4000E6D9F4 /* AFVWeather.swift */; };
 		D0D8F1B31E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1B21E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift */; };
+		D0D8F1B81E93F6CA00E6D9F4 /* AFVUIImage+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1B71E93F6CA00E6D9F4 /* AFVUIImage+GIF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		D0D8F1AC1E9358EA00E6D9F4 /* AFVWeatherViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVWeatherViewCell.swift; sourceTree = "<group>"; };
 		D0D8F1AF1E935A4000E6D9F4 /* AFVWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVWeather.swift; sourceTree = "<group>"; };
 		D0D8F1B21E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVImagePickerViewController.swift; sourceTree = "<group>"; };
+		D0D8F1B71E93F6CA00E6D9F4 /* AFVUIImage+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AFVUIImage+GIF.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				D0D8F1B21E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift */,
+				D0D8F1B71E93F6CA00E6D9F4 /* AFVUIImage+GIF.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				D0D8F1A11E92ADF200E6D9F4 /* AFVSingUpViewController.swift in Sources */,
 				D0D8F1AD1E9358EB00E6D9F4 /* AFVWeatherViewCell.swift in Sources */,
 				D0D8F17D1E92798600E6D9F4 /* AFVMainScreenViewController.swift in Sources */,
+				D0D8F1B81E93F6CA00E6D9F4 /* AFVUIImage+GIF.swift in Sources */,
 				D0D8F1951E92A06400E6D9F4 /* AFVApplicationManager.swift in Sources */,
 				D0D8F1771E92742F00E6D9F4 /* AFVInitialViewController.swift in Sources */,
 			);

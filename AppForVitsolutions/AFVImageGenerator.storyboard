@@ -21,18 +21,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Ip-K0-EUu">
-                                <rect key="frame" x="7" y="30" width="360" height="607"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Ip-K0-EUu">
+                                <rect key="frame" x="7" y="100" width="360" height="467"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3Ip-K0-EUu" firstAttribute="centerY" secondItem="3Al-7n-9gn" secondAttribute="centerY" id="4sC-8l-TId"/>
                             <constraint firstItem="3Ip-K0-EUu" firstAttribute="centerX" secondItem="3Al-7n-9gn" secondAttribute="centerX" id="SNf-yr-dCe"/>
-                            <constraint firstItem="3nX-EW-scS" firstAttribute="top" secondItem="3Ip-K0-EUu" secondAttribute="bottom" constant="30" id="hUn-rB-1L5"/>
+                            <constraint firstItem="3nX-EW-scS" firstAttribute="top" secondItem="3Ip-K0-EUu" secondAttribute="bottom" constant="100" id="hUn-rB-1L5"/>
                             <constraint firstItem="3Ip-K0-EUu" firstAttribute="leading" secondItem="3Al-7n-9gn" secondAttribute="leading" constant="7" id="jii-SZ-lpQ"/>
                             <constraint firstAttribute="trailing" secondItem="3Ip-K0-EUu" secondAttribute="trailing" constant="8" id="oDm-Tx-VuO"/>
-                            <constraint firstItem="3Ip-K0-EUu" firstAttribute="top" secondItem="3Al-7n-9gn" secondAttribute="top" constant="30" id="qz3-bD-VTh"/>
+                            <constraint firstItem="3Ip-K0-EUu" firstAttribute="top" secondItem="3Al-7n-9gn" secondAttribute="top" constant="100" id="qz3-bD-VTh"/>
                         </constraints>
                     </view>
                     <connections>
