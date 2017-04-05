@@ -8,12 +8,9 @@
 
 import UIKit
 import PKHUD
+import CoreLocation
 
 class AFVUploadNewPictureViewController: AFVImagePickerViewController {
-    
-    // TODO: Add location manager here
-    let latitude: Float = 49.993500
-    let longitude: Float = 36.230383
     
     @IBOutlet weak var uploadPictureImageView: UIImageView!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -21,13 +18,40 @@ class AFVUploadNewPictureViewController: AFVImagePickerViewController {
     
     let applicationManager = AFVApplicationManager.instance()
     
+    var location: CLLocation?
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        getLocation()
+    }
+    
     // MARK: - Main methods
+    
+    private func getLocation()
+    {
+        applicationManager.locationService.locationServiceCoordinatesResult = { [weak self] (result) in
+            guard let strongSelf = self else { return }
+            switch result {
+            case .success(let value):
+                if let coordinates = value as? CLLocation {
+                    strongSelf.location = coordinates
+                } else {
+                    print("***** Weird error occured! No CLLocation Data =(")
+                    HUD.flash(.error)
+                }
+            case .failure(let error):
+                if error != nil { print(error!) }
+                HUD.flash(.error)
+            }
+        }
+    }
     
     private func addImage()
     {
-        guard let picture = uploadPictureImageView.image else { return }
+        guard let picture = uploadPictureImageView.image, let latitude = location?.coordinate.latitude, let longitude = location?.coordinate.longitude else { return }
         HUD.show(.progress)
-        applicationManager.apiService.uploadNew(picture, description: descriptionTextField.description, hashtag: hashtagTextField.text, latitude: latitude, longitude: longitude) { (result) in
+
+        applicationManager.apiService.uploadNew(picture, description: descriptionTextField.description, hashtag: hashtagTextField.text, latitude: Float(latitude), longitude: Float(longitude)) { (result) in
             switch(result) {
             case .success(let value):
                 print(value)
@@ -37,6 +61,19 @@ class AFVUploadNewPictureViewController: AFVImagePickerViewController {
                 HUD.flash(.error, delay: 1.0)
             }
         }
+    }
+    
+    // MARK: - Alerts    
+    
+    fileprivate func showLocationServicesDeniedAlert() {
+        let alert = UIAlertController(title: "Location Services Disabled",
+                                      message: "Please enable location services for this app in Settings.",
+                                      preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        
+        present(alert, animated: true, completion: nil)
     }
     
     // MARK: - UIImagePickerControllerDelegate

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AFVWeather: NSObject {
+struct AFVWeather {
     
     var id: String? = nil
     var bigImagePath: String? = nil

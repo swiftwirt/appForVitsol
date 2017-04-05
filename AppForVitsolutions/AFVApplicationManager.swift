@@ -26,4 +26,12 @@ class AFVApplicationManager {
         
     }()
     
+    lazy var locationService: AFVLocationService = {
+        
+        let service = AFVLocationService()
+        
+        return service
+        
+    }()
+    
 }

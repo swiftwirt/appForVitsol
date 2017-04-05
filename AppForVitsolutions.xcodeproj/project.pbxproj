@@ -29,6 +29,7 @@
 		D0D8F1B01E935A4000E6D9F4 /* AFVWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1AF1E935A4000E6D9F4 /* AFVWeather.swift */; };
 		D0D8F1B31E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1B21E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift */; };
 		D0D8F1B81E93F6CA00E6D9F4 /* AFVUIImage+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1B71E93F6CA00E6D9F4 /* AFVUIImage+GIF.swift */; };
+		D0D8F1BA1E94E51F00E6D9F4 /* AFVLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F1B91E94E51F00E6D9F4 /* AFVLocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		D0D8F1AF1E935A4000E6D9F4 /* AFVWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVWeather.swift; sourceTree = "<group>"; };
 		D0D8F1B21E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVImagePickerViewController.swift; sourceTree = "<group>"; };
 		D0D8F1B71E93F6CA00E6D9F4 /* AFVUIImage+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AFVUIImage+GIF.swift"; sourceTree = "<group>"; };
+		D0D8F1B91E94E51F00E6D9F4 /* AFVLocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVLocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			children = (
 				D0D8F1901E9294CF00E6D9F4 /* AFVApiService.swift */,
 				D0D8F18E1E92945D00E6D9F4 /* AFVRestApiService.swift */,
+				D0D8F1B91E94E51F00E6D9F4 /* AFVLocationService.swift */,
 				D0D8F1921E92951600E6D9F4 /* AFVKeychainService.swift */,
 			);
 			name = Servises;
@@ -356,6 +359,7 @@
 				D0D8F15D1E9271B700E6D9F4 /* AppDelegate.swift in Sources */,
 				D0D8F1821E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift in Sources */,
 				D0D8F1B31E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift in Sources */,
+				D0D8F1BA1E94E51F00E6D9F4 /* AFVLocationService.swift in Sources */,
 				D0D8F1B01E935A4000E6D9F4 /* AFVWeather.swift in Sources */,
 				D0D8F1911E9294CF00E6D9F4 /* AFVApiService.swift in Sources */,
 				D0D8F1931E92951600E6D9F4 /* AFVKeychainService.swift in Sources */,
