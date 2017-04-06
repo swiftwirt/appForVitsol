@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		53974DC80A0B37DEF79FC5BA /* Pods_AppForVitsolutions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745C68C82A6DB29F6E6B049D /* Pods_AppForVitsolutions.framework */; };
+		D0437E461E96347A0047A1E4 /* AFVErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0437E451E9634790047A1E4 /* AFVErrorHandler.swift */; };
 		D0D8F15D1E9271B700E6D9F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F15C1E9271B700E6D9F4 /* AppDelegate.swift */; };
 		D0D8F1641E9271B800E6D9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F1631E9271B800E6D9F4 /* Assets.xcassets */; };
 		D0D8F1671E9271B800E6D9F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F1651E9271B800E6D9F4 /* LaunchScreen.storyboard */; };
@@ -36,6 +37,7 @@
 		745C68C82A6DB29F6E6B049D /* Pods_AppForVitsolutions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppForVitsolutions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DA55D9236A2E1A28A6427F /* Pods-AppForVitsolutions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppForVitsolutions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppForVitsolutions/Pods-AppForVitsolutions.debug.xcconfig"; sourceTree = "<group>"; };
 		A02F119C1C936C88D2C371F7 /* Pods-AppForVitsolutions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppForVitsolutions.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppForVitsolutions/Pods-AppForVitsolutions.release.xcconfig"; sourceTree = "<group>"; };
+		D0437E451E9634790047A1E4 /* AFVErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVErrorHandler.swift; sourceTree = "<group>"; };
 		D0D8F1591E9271B700E6D9F4 /* AppForVitsolutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppForVitsolutions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D8F15C1E9271B700E6D9F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D8F1631E9271B800E6D9F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				D0D8F1B21E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift */,
 				D0D8F1B71E93F6CA00E6D9F4 /* AFVUIImage+GIF.swift */,
+				D0437E451E9634790047A1E4 /* AFVErrorHandler.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				D0D8F15D1E9271B700E6D9F4 /* AppDelegate.swift in Sources */,
 				D0D8F1821E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift in Sources */,
 				D0D8F1B31E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift in Sources */,
+				D0437E461E96347A0047A1E4 /* AFVErrorHandler.swift in Sources */,
 				D0D8F1BA1E94E51F00E6D9F4 /* AFVLocationService.swift in Sources */,
 				D0D8F1B01E935A4000E6D9F4 /* AFVWeather.swift in Sources */,
 				D0D8F1911E9294CF00E6D9F4 /* AFVApiService.swift in Sources */,
