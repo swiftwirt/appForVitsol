@@ -22,8 +22,8 @@ class AFVSingUpViewController: AFVImagePickerViewController {
     
     private let applicationManager = AFVApplicationManager.instance()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         // Configure ErrorHandler
         applicationManager.alertHandler.viewController = self
     }

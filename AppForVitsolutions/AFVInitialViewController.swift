@@ -19,9 +19,9 @@ class AFVInitialViewController: UITableViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     let applicationManager = AFVApplicationManager.instance()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         // Configure ErrorHandler
         applicationManager.alertHandler.viewController = self
     }
