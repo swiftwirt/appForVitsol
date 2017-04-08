@@ -34,4 +34,19 @@ class AFVApplicationManager {
         
     }()
     
+    lazy var errorHandler: AFVErrorHandler = {
+        
+        let errorHandler = AFVErrorHandler()
+        
+        return errorHandler
+        
+    }()
+    
+    lazy var alertHandler: AFVAlertHandler = {
+        
+        let alertHandler = AFVAlertHandler()
+        
+        return alertHandler
+        
+    }()
 }

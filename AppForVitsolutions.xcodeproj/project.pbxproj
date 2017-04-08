@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		53974DC80A0B37DEF79FC5BA /* Pods_AppForVitsolutions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745C68C82A6DB29F6E6B049D /* Pods_AppForVitsolutions.framework */; };
 		D0437E461E96347A0047A1E4 /* AFVErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0437E451E9634790047A1E4 /* AFVErrorHandler.swift */; };
+		D0475AED1E9920DF00A497C5 /* AFVAlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0475AEC1E9920DF00A497C5 /* AFVAlertHandler.swift */; };
 		D0D8F15D1E9271B700E6D9F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8F15C1E9271B700E6D9F4 /* AppDelegate.swift */; };
 		D0D8F1641E9271B800E6D9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F1631E9271B800E6D9F4 /* Assets.xcassets */; };
 		D0D8F1671E9271B800E6D9F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8F1651E9271B800E6D9F4 /* LaunchScreen.storyboard */; };
@@ -38,6 +39,7 @@
 		84DA55D9236A2E1A28A6427F /* Pods-AppForVitsolutions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppForVitsolutions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppForVitsolutions/Pods-AppForVitsolutions.debug.xcconfig"; sourceTree = "<group>"; };
 		A02F119C1C936C88D2C371F7 /* Pods-AppForVitsolutions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppForVitsolutions.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppForVitsolutions/Pods-AppForVitsolutions.release.xcconfig"; sourceTree = "<group>"; };
 		D0437E451E9634790047A1E4 /* AFVErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVErrorHandler.swift; sourceTree = "<group>"; };
+		D0475AEC1E9920DF00A497C5 /* AFVAlertHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFVAlertHandler.swift; sourceTree = "<group>"; };
 		D0D8F1591E9271B700E6D9F4 /* AppForVitsolutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppForVitsolutions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D8F15C1E9271B700E6D9F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D8F1631E9271B800E6D9F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,8 +160,8 @@
 		D0D8F1711E92721100E6D9F4 /* Initial Screen */ = {
 			isa = PBXGroup;
 			children = (
-				D0D8F1721E92725800E6D9F4 /* AFVInitialScreen.storyboard */,
 				D0D8F1761E92742F00E6D9F4 /* AFVInitialViewController.swift */,
+				D0D8F1721E92725800E6D9F4 /* AFVInitialScreen.storyboard */,
 			);
 			name = "Initial Screen";
 			sourceTree = "<group>";
@@ -167,9 +169,9 @@
 		D0D8F1791E92794300E6D9F4 /* Main Screen */ = {
 			isa = PBXGroup;
 			children = (
-				D0D8F17A1E92796100E6D9F4 /* AFVMainScreen.storyboard */,
 				D0D8F1AC1E9358EA00E6D9F4 /* AFVWeatherViewCell.swift */,
 				D0D8F17C1E92798600E6D9F4 /* AFVMainScreenViewController.swift */,
+				D0D8F17A1E92796100E6D9F4 /* AFVMainScreen.storyboard */,
 			);
 			name = "Main Screen";
 			sourceTree = "<group>";
@@ -177,8 +179,8 @@
 		D0D8F17E1E92803C00E6D9F4 /* Upload New Picture Screen */ = {
 			isa = PBXGroup;
 			children = (
-				D0D8F17F1E92807800E6D9F4 /* AFVUploadNewPictureScreen.storyboard */,
 				D0D8F1811E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift */,
+				D0D8F17F1E92807800E6D9F4 /* AFVUploadNewPictureScreen.storyboard */,
 			);
 			name = "Upload New Picture Screen";
 			sourceTree = "<group>";
@@ -199,6 +201,8 @@
 				D0D8F18E1E92945D00E6D9F4 /* AFVRestApiService.swift */,
 				D0D8F1B91E94E51F00E6D9F4 /* AFVLocationService.swift */,
 				D0D8F1921E92951600E6D9F4 /* AFVKeychainService.swift */,
+				D0437E451E9634790047A1E4 /* AFVErrorHandler.swift */,
+				D0475AEC1E9920DF00A497C5 /* AFVAlertHandler.swift */,
 			);
 			name = Servises;
 			sourceTree = "<group>";
@@ -225,7 +229,6 @@
 			children = (
 				D0D8F1B21E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift */,
 				D0D8F1B71E93F6CA00E6D9F4 /* AFVUIImage+GIF.swift */,
-				D0437E451E9634790047A1E4 /* AFVErrorHandler.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				D0D8F1821E9280C900E6D9F4 /* AFVUploadNewPictureViewController.swift in Sources */,
 				D0D8F1B31E93C4FD00E6D9F4 /* AFVImagePickerViewController.swift in Sources */,
 				D0437E461E96347A0047A1E4 /* AFVErrorHandler.swift in Sources */,
+				D0475AED1E9920DF00A497C5 /* AFVAlertHandler.swift in Sources */,
 				D0D8F1BA1E94E51F00E6D9F4 /* AFVLocationService.swift in Sources */,
 				D0D8F1B01E935A4000E6D9F4 /* AFVWeather.swift in Sources */,
 				D0D8F1911E9294CF00E6D9F4 /* AFVApiService.swift in Sources */,

@@ -22,6 +22,12 @@ class AFVSingUpViewController: AFVImagePickerViewController {
     
     private let applicationManager = AFVApplicationManager.instance()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Configure ErrorHandler
+        applicationManager.alertHandler.viewController = self
+    }
+    
     // MARK: - Main methods
     
     private func signUp()
@@ -37,13 +43,33 @@ class AFVSingUpViewController: AFVImagePickerViewController {
                 switch(result) {
                 case .success(let value):
                     print(value)
-                    HUD.flash(.success, delay: 1.0)
-                    self.performSegue(withIdentifier: SegueIdentifier.mainScreen.rawValue, sender: nil)
+                    guard let dictionary = value as? [AnyHashable: Any] else {
+                        HUD.flash(.error, delay: 1.0)
+                        return
+                    }
+                    self.handleLogInError(dictionary)
                 case .failure(let error):
                     print(error)
                     HUD.flash(.error, delay: 1.0)
                 }
             }
+        }
+    }
+    
+    private func handleLogInError(_ dictionary: [AnyHashable: Any])
+    {
+        do {
+            try applicationManager.errorHandler.handleSignInError(jsonDic: dictionary)
+            HUD.flash(.success, delay: 1.0)
+            self.performSegue(withIdentifier: SegueIdentifier.mainScreen.rawValue, sender: nil)
+        } catch ErrorType.noEmail {
+            applicationManager.alertHandler.showNoEmailError()
+        } catch ErrorType.noPassword {
+            applicationManager.alertHandler.showNoPasswordError()
+        } catch ErrorType.invalidEmail {
+            applicationManager.alertHandler.showNoValidEmailError()
+        } catch {
+            applicationManager.alertHandler.showUnknownError()
         }
     }
     
